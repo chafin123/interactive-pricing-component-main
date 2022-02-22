@@ -22,33 +22,47 @@
   </style>
 </head>
 <body>
-  <header class="text-center">
-    <h5 class="text-dark">
-      Simple, traffic-based pricing
-    </h5>
-    <p class="text-light text-small">
-      Sign-up for our 30-day trial. No credit card required. 
-    </p>
-  </header>
-  <div class="card text-center">
-    <div class="card-body ">
-      <p class="">Pageviews</p>
-      <p>$ /month</p>
+  <!-- background pattern -->
+  <div class="img-fluid" style="background-image: url('/images/bg-pattern.svg');
+    height: 15rem; background-position: top;">
+    <!-- backgroun circles -->
+    <div class="container container-fluid" style="background-image: url('/images/pattern-circles.svg');
+            background-repeat: no-repeat; background-position: top;">
+          <!-- header -->
+    <header class="text-center">
+      <h5 class="text-dark">
+        Simple, traffic-based pricing
+      </h5>
+      <p class="text-small">
+        Sign-up for our 30-day trial. No credit card required. 
+      </p>
+          
+      <!-- start of card -->
     </div>
-    <div class="card-body">
-      Monthly Billing
-      Yearly Billing 25% discount
-    </div>
-  
-    <ul class="list-unstyled">
-      <li>Unlimited websites</li>
-      <li>100% data ownership</li>
-      <li>Email Reports</li>
+    </header>
+    <div class="card text-center m-3">
+      <div class="card-body ">
+        <p class="">Pageviews</p>
+        <!-- slider -->
+        <img src="./images/icon-slider.svg">
+        <p>$ /month</p>
+      </div>
+      <div class="card-body">
+        Monthly Billing
+        <!-- switch -->
+        <p>Yearly Billing <span class="badge" id="discountBadge">25%</span></p>
+      </div>
+      <!-- selling points and call to action -->
+      <ul class="list-unstyled">
+        <li><img src="./images/icon-check.svg"> Unlimited websites</li>
+        <li><img src="./images/icon-check.svg"> 100% data ownership</li>
+        <li><img src="./images/icon-check.svg"> Email Reports</li>
+        
+      </ul> 
       
-    </ul> 
+      Start my trial
     
-    Start my trial
-  
+    </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
