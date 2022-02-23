@@ -9,6 +9,9 @@
 <!--JS-->
 <script src="./index.js" defer></script>
 <!--Addition CSS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
 <link href="./style/style.css" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -23,18 +26,16 @@
 </head>
 <body>
   <!-- background pattern -->
-  <div class="img-fluid" style="background-image: url('/images/bg-pattern.svg');
-    height: 15rem; background-position: top;">
-    <!-- backgroun circles -->
-    <div class="container container-fluid" style="background-image: url('/images/pattern-circles.svg');
-            background-repeat: no-repeat; background-position: top;">
+  <div class="img-fluid" >
+    <!-- background circles -->
+    <div class="bg-image">
           <!-- header -->
     <header class="text-center">
       <h5 class="text-dark">
         Simple, traffic-based pricing
       </h5>
       <p class="text-small">
-        Sign-up for our 30-day trial. No credit card required. 
+        Sign-up for our 30-day trial.<br> No credit card required. 
       </p>
           
       <!-- start of card -->
@@ -44,29 +45,54 @@
       <div class="card-body ">
         <p class="">Pageviews</p>
         <!-- slider -->
-        <img src="./images/icon-slider.svg">
-        <p>$ /month</p>
+        <div class="wrap">
+          <input type="range" class="range" min="0" max="100" step="0.1" value="0">
+          <div class="track">
+            <div class="track-inner"></div>
+          </div>
+          <div class="thumb"></div>
+        </div>
+        <div class="priceContainer">
+          <p><span>$</span><span id="rangeNumbers">16</span> /month</p>
+        </div>
       </div>
       <div class="card-body">
-        Monthly Billing
-        <!-- switch -->
-        <p>Yearly Billing <span class="badge" id="discountBadge">25%</span></p>
+        <div class="row">
+          <div class="col">
+            <p>Monthly Billing</p>
+          </div>
+          <!-- switch -->
+          <div class="col-2">
+            <label class="switch ">
+              <input type="checkbox" class="default">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="col">
+            <p>Yearly Billing <span class="badge" id="discountBadge">25%</span></p>
+          </div>
+        </div>
       </div>
+      <hr>
       <!-- selling points and call to action -->
+      
       <ul class="list-unstyled">
         <li><img src="./images/icon-check.svg"> Unlimited websites</li>
         <li><img src="./images/icon-check.svg"> 100% data ownership</li>
         <li><img src="./images/icon-check.svg"> Email Reports</li>
         
       </ul> 
-      
-      Start my trial
+      <div class="trialBtnSection">
+        <button class="btn btn-primary trialButton">
+          Start my trial
+        </button>
+      </div>
     
     </div>
   </div>
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

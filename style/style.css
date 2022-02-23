@@ -1,6 +1,165 @@
+body {
+    font-size: 62.5%;
+    background-color: hsl(230, 100%, 99%);
+}
+h5, span, p, .btn {
+    font-family: "Manrope",sans-serif;
+    color: hsl(225, 20%, 60%);
+}
 header {
-    margin-top: rem;
-    margin-bottom: rem;
+    padding-top: 3rem;
+    padding-bottom: 2.7rem;
+}
+header p, .btn {
+    font-size: .6rem;
+}
+header h5 {
+    padding-top: 2rem;
+}
+li {
+    padding-bottom: .5rem;
+}
+.priceContainer span {
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+}
+.priceContainer {
+    font-size: large;
+    padding-top: 1rem;
+}
+.img-fluid {
+    background-image: url('/images/bg-pattern.svg');
+    background-size: 290%;
+    background-repeat: no-repeat;
+}
+.bg-image {
+    background-image: url('/images/pattern-circles.svg');
+    background-repeat: no-repeat; 
+    background-position: top;
+    background-position-y: 3rem;
+}
+.card {
+    background-color:  hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 5px;
+}
+.rangeslider {
+    width: 100%;
+}
+.wrap {
+    width: 100%;
+    position: relative;
+    
+  }
+.range {
+width: 100%;
+cursor: pointer;
+opacity: 0;
+}
+.range::-ms-tooltip {
+display: none;
+}
+
+.track {
+width: 100%;
+height: 7px;
+background: hsl(224, 65%, 95%);
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+pointer-events: none;
+border-radius: 4px;
+}
+.track-inner {
+width: 0;
+height: 100%;
+background: hsl(174, 86%, 45%);
+border-radius: 4px;
+}
+
+.thumb {
+width: 35px;
+height: 35px;
+background:url(/images/icon-slider.svg) hsl(174, 86%, 45%);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 60%;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 0;
+transform: translate(0%, -50%);
+pointer-events: none;
+box-shadow: 1px 2px 10px hsl(174, 86%, 45%);
+}
+.billingSwitch {
+
+    height: 1rem;
+    width: 100%;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    float:right;
+  }
+  
+  /* Hide default HTML checkbox */
+.switch input {
+      display:none;
+    }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(223, 50%, 87%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:active  {
+    background-color: hsl(174, 86%, 45%);
+}
+.slider:not(.checked):active {
+    background-color: hsl(174, 86%, 45%);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input.default:checked + .slider {
+  background-color: hsl(223, 50%, 87%);
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.trialButton {
+    width: fit-content;
+    border-radius: 40px;
+    padding: 5px 20px;
 }
 #discountBadge {
     background-color: hsl(14, 92%, 95%);
