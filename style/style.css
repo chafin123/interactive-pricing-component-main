@@ -32,12 +32,11 @@ li {
     padding-top: 2rem;
 }
 .img-fluid {
-   
     background-size: 290%;
     background-repeat: no-repeat;
 }
 .bg-image {
-    
+
     background-repeat: no-repeat; 
     background-position: top;
     background-position-y: 3rem;
@@ -45,6 +44,8 @@ li {
 .card {
     background-color:  hsl(0, 0%, 100%);
     box-shadow: 1px 1px 5px;
+    margin: 0px 20px 0px;
+    
 }
 .rangeslider {
     width: 100%;
@@ -85,9 +86,6 @@ opacity: 60%;
 width: 35px;
 height: 35px;
 
-background-repeat: no-repeat;
-background-position: center;
-background-size: 60%;
 border-radius: 50%;
 position: absolute;
 top: 50%;
@@ -167,6 +165,17 @@ input:checked + .slider:before {
     margin-bottom: 1.5rem;
     font-size: .6rem;
 }
+.trialButton:hover {
+    background-color: hsl(174, 86%, 45%);
+}
+.trialButton:active {
+    box-shadow: 1px 1px 10px hsl(174, 86%, 45%);
+}
+.trialButton:focus {
+    box-shadow: 1px 1px 10px hsl(174, 86%, 45%);
+    background-color: hsl(174, 86%, 45%);
+    outline: none;
+}
 #priceParagraph {
     font-size:.7rem;
 }
@@ -177,6 +186,6 @@ input:checked + .slider:before {
 @media (min-width: 1024px) {
     .card {
         width: 50%;
-        margin-left: 100rem;
+        margin: auto;
     }
 }
