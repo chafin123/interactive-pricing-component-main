@@ -45,56 +45,71 @@
     </header>
     <div class="card text-center ">
       <div class="card-body ">
-        <p class="pageViewParagraph"><span id="pageViewNumber">100k</span> Pageviews</p>
-        <!-- slider -->
-        <div class="wrap">
-          <input type="range"  id="pageViewSlider" class="range" min="0" max="100" step="25" value="60">
-          
-          <div class="track">
-            <div class="track-inner"></div>
+        <!-- Pageviews -->
+        <div class="container py-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="pageViewParagraph"><span id="pageViewNumber">100k</span> Pageviews</p>
+            </div>
+            <div class="col-lg-12 order-lg-last">
+              <!-- slider -->
+              <div class="wrap">
+                <input type="range"  id="pageViewSlider" class="range" min="0" max="100" step="25" value="60">
+                
+                <div class="track">
+                  <div class="track-inner"></div>
+                </div>
+                <div class="thumb"
+                      style="background:url('./images/icon-slider.svg') hsl(174, 86%, 45%); background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: 60%;">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+                <p id="priceParagraph"><span id="rangeNumbers">$16.00</span> /month</p>
+            </div>
           </div>
-          <div class="thumb"
-          style="background:url('./images/icon-slider.svg') hsl(174, 86%, 45%); background-repeat: no-repeat;
-          background-position: center;
-          background-size: 60%;"
-          ></div>
         </div>
-        <div class="priceContainer">
-          <p id="priceParagraph"><span id="rangeNumbers">$16.00</span> /month</p>
         </div>
-      </div>
       <div class="card-body">
         <div class="row">
-          <div class="col">
+          <div class="col-lg-3 col-1"></div>
+          <div class="col-lg-3 col-5 g-1 text-lg-center text-start">
             <p>Monthly Billing</p>
           </div>
           <!-- switch -->
-          <div class="col-2">
-            <label class="switch ">
+          <div class="col-1 px-4">
+            <label class="switch">
               <input type="checkbox" class="default" name="discountSlider">
               <span class="slider round"></span>
             </label>
           </div>
-          <div class="col">
+          <div class="col g-1 text-start">
             <p>Yearly Billing <span class="badge" id="discountBadge">25%</span></p>
           </div>
         </div>
       </div>
       <hr>
       <!-- selling points and call to action -->
-      
-      <ul class="list-unstyled">
-        <li><img src="./images/icon-check.svg"> Unlimited websites</li>
-        <li><img src="./images/icon-check.svg"> 100% data ownership</li>
-        <li><img src="./images/icon-check.svg"> Email Reports</li>
-        
-      </ul> 
-      <div class="trialBtnSection">
-        <button class="btn btn-primary trialButton">
-          Start my trial
-        </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="list-unstyled">
+              <li><img src="./images/icon-check.svg"> Unlimited websites</li>
+              <li><img src="./images/icon-check.svg"> 100% data ownership</li>
+              <li><img src="./images/icon-check.svg"> Email Reports</li>
+            </ul> 
+          </div>
+          <div class="col-lg-6 align-self-center">
+            <div class="trialBtnSection">
+              <button class="btn btn-primary trialButton">
+                Start my trial
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    
     </div>
   </div>
   <!-- <div class="attribution">
