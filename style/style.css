@@ -84,7 +84,7 @@ opacity: 60%;
 .thumb {
 width: 35px;
 height: 35px;
-background:url(/images/icon-slider.svg) hsl(174, 86%, 45%);
+background:url('./images/icon-slider.svg') hsl(174, 86%, 45%);
 background-repeat: no-repeat;
 background-position: center;
 background-size: 60%;
