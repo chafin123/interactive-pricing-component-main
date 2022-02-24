@@ -32,12 +32,12 @@ li {
     padding-top: 2rem;
 }
 .img-fluid {
-    background-image: url('./images/bg-pattern.svg');
+    background-image: url('../images/bg-pattern.svg');
     background-size: 290%;
     background-repeat: no-repeat;
 }
 .bg-image {
-    background-image: url('./images/pattern-circles.svg');
+    background-image: url('../images/pattern-circles.svg');
     background-repeat: no-repeat; 
     background-position: top;
     background-position-y: 3rem;
@@ -84,7 +84,7 @@ opacity: 60%;
 .thumb {
 width: 35px;
 height: 35px;
-background:url('./images/icon-slider.svg') hsl(174, 86%, 45%);
+background:url('../images/icon-slider.svg') hsl(174, 86%, 45%);
 background-repeat: no-repeat;
 background-position: center;
 background-size: 60%;
